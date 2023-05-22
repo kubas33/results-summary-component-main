@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    flex-direction: column;
+}
+#result, #summary {
+    padding: 35px;
+    width: 100%;
+}
+.f-white {
+    color: hsl(0, 0%, 100%);
+}
+.light-lavender {
+    color: hsl(241, 100%, 89%);
+}
+.dark-gray-blue {
+    color: hsl(224, 30%, 27%);
+}
+.boldest {
+    font-weight: 800;
+}
+.bolder {
+    font-weight: 700;
+}
+.bigger {
+    font-size: larger;
+}
+.pale-blue {
+    color: hsl(221, 100%, 96%)
+}
+.light-red {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+.orange-yellow {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.grean-teal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.cobalt-blue {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+.actual {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.max-score {
+    color: hsla(224, 30%, 27%, 0.5);
+    font-weight: 800;
+}
+
+.margin-top-bot-25 {
+    margin: 25px auto;
+}
+.margin-bot-25 {
+    margin-bottom: 25px;
+}
+.btn-be-like {
+    min-height: 45px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.continue{
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 40px;
+    text-align: center;
+}
+.continue:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)) ;
+}
+
+.category-desc{
+    justify-content: center;
+    display: flex;
+}
+.category-desc img{
+    margin-right: 10px;
+}
+.attribution{
+    display: block;
+    font-size: xx-small;
+}
+#main {
+    min-width: 700px;
+    width: 700px;
+    max-width: 700px;
+    margin: auto auto;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.623);
+    border-radius: 20px;
+    flex-basis: 50%;
+}
+
+#result {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)) ;
+    border-radius: inherit;
+}
+#more-than {
+    text-align: center;
+}
+
+#score-overall {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-image:linear-gradient(to bottom,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)) ;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+
+#inner-score {
+    text-align: center;
+}
+
+#score {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+#max-score {
+    font-size: smaller;
+}
