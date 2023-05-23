@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 #container {
@@ -8,7 +9,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Hanken Grotesk', sans-serif;
     flex-direction: column;
 }
@@ -32,28 +33,28 @@
     font-weight: 700;
 }
 .bigger {
-    font-size: larger;
+    font-size: xx-large;
 }
 .pale-blue {
     color: hsl(221, 100%, 96%)
 }
 .light-red {
     color: hsl(0, 100%, 67%);
-    background-color: hsla(0, 100%, 67%, 0.2);
+    background-color: hsla(0, 100%, 67%, 0.05);
 }
 .orange-yellow {
     color: hsl(39, 100%, 56%);
-    background-color: hsla(39, 100%, 56%, 0.2);
+    background-color: hsla(39, 100%, 56%, .1);
 }
 
 .grean-teal {
     color: hsl(166, 100%, 37%);
-    background-color: hsla(166, 100%, 37%, 0.2);
+    background-color: hsla(166, 100%, 37%, .05);
 }
 
 .cobalt-blue {
     color: hsl(234, 85%, 45%);
-    background-color: hsla(234, 85%, 45%, 0.2);
+    background-color: hsla(234, 85%, 45%, .05);
 }
 .actual {
     color: hsl(224, 30%, 27%);
@@ -80,6 +81,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    font-size: smaller;
 }
 
 .continue{
@@ -108,11 +110,11 @@
 }
 #main {
     min-width: 700px;
-    width: 700px;
+    width: auto;
     max-width: 700px;
     margin: auto auto;
     display: flex;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.623);
+    box-shadow: 15px 50px 20px hsla(256, 72%, 46%, 0.1);
     border-radius: 20px;
     flex-basis: 50%;
 }
@@ -126,6 +128,9 @@
 }
 #more-than {
     text-align: center;
+    font-size: smaller;
+    margin: 0 25px;
+    font-weight: 500;
 }
 
 #score-overall {
@@ -145,10 +150,27 @@
 }
 
 #score {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 800;
 }
 
 #max-score {
     font-size: smaller;
 }
+
+@media screen and (max-width: 700px) {
+
+    #main {
+        flex-direction: column;
+        max-width: 480px;
+        min-width: 320px;
+        width: auto;
+        box-shadow: none;
+    }
+
+    #container {
+        min-width: 320px;
+        font-size: 20px;
+    }
+} 
+    
