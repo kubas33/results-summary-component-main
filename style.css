@@ -6,9 +6,9 @@
 
 #container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     font-size: 22px;
     font-family: 'Hanken Grotesk', sans-serif;
     flex-direction: column;
@@ -166,11 +166,15 @@
         min-width: 320px;
         width: auto;
         box-shadow: none;
+        border-radius: 0;
     }
 
     #container {
         min-width: 320px;
-
+    }
+    #result {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 } 
     
